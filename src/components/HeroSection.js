@@ -2,15 +2,20 @@ import React from "react";
 import "../App.css";
 import { Button } from "./Button";
 import "./HeroSection.css";
+import logo from "../assets/logo.png"
+
 
 function HeroSection() {
   return (
     <div className="hero-container">
-      <video src="/videos/video-4.mp4" autoPlay muted />
-      <h1>SEBASTIAN</h1>
-      <p>ROBIĘ PIERWSZE PRZYMIARKI</p>
+      <img className="main-img" />
+      <img className="main-logo" src={logo} />
+      <div className="main-text">
+        <h1>DOS GATOS</h1>
+        <p>Taqueria</p>
+      </div>
       <div className="hero-btns">
-        <Button
+        {/* <Button
           className="btns"
           buttonStyle="btn--outline"
           buttonSize="btn--large"
@@ -23,7 +28,7 @@ function HeroSection() {
           buttonSize="btn--large"
         >
           ZAMÓW COŚ <i className="far fa-play-circle" />
-        </Button>
+        </Button> */}
       </div>
     </div>
   );

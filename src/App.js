@@ -1,24 +1,30 @@
 import "./App.css";
 import React from "react";
+import {Helmet} from "react-helmet";
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
-import Services from "./components/pages/Services";
-import Products from "./components/pages/Products";
-import SignUp from "./components/pages/SignUp";
+import About from "./components/pages/About";
+import Menu from "./components/pages/Menu";
+import Hours from "./components/pages/Hours";
+import Contact from "./components/pages/Contact"
+import favicon from "../src/assets/favicon.ico"
 
 function App() {
   return (
     <>
-      <Router>
+    <Helmet>
+      <title>Dos Gatos</title>
+      <link rel="icon" type="image/png" href={favicon} sizes="16x16" alt="favicon"/>
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta name="HandheldFriendly" content="true" />
+    </Helmet>
         <Navbar />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/services" components={Services} />
-          <Route path="/products" components={Products} />
-          <Route path="/sign-up" components={SignUp} />
-        </Switch>
-      </Router>
+        <Home />
+        <About />
+        <Menu />
+        <Hours />
+        <Contact />
     </>
   );
 }
