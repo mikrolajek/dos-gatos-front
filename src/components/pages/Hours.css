@@ -19,7 +19,8 @@
 
 .hours-left-side > img {
   margin-left: 25%;
-  height: 90%;
+  width: 60%;
+  overflow: hidden;
 }
 
 .hours-right-side {
@@ -75,7 +76,7 @@
 
 @media screen and (max-width: 960px) {
   .hours-container {
-    width: 115%;
+    width: 100%;
     flex-direction: column-reverse;
     display: flex;
     justify-content: center;

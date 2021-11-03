@@ -46,7 +46,7 @@ h2 {
 
 @media screen and (max-width: 960px) {
   .menu-container {
-    width: 115%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
