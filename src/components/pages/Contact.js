@@ -11,7 +11,7 @@ export default function Contact() {
     <br />
     <p>
     <img alt="numer" src={phone} className="contact-img" />  {" "}
-    +48 666 666 666
+    +48 737 855 501
     </p>
     <p>
     <img alt="facebook" src={facebook} className="contact-img" /> {" "}
