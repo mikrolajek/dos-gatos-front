@@ -7,7 +7,7 @@ import About from "./components/pages/About";
 import Menu from "./components/pages/Menu";
 import Hours from "./components/pages/Hours";
 import Contact from "./components/pages/Contact"
-import favicon from "/assets/favicon.ico"
+import favicon from "../src/assets/favicon.ico"
 
 function App() {
   return (
